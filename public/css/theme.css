@@ -10,6 +10,8 @@
     --accent: #05386b;
     --fourth: #8ee4af;
     --neutral: #edf5e1;
+    --dimLink: 85%;
+    --dimBg: 95%;
 }
 
 /**************** Background related ****************/
@@ -68,59 +70,59 @@
 a.txtcol-main:hover
 {
     color: var(--main);
-    filter: brightness(85%) !important;
+    filter: brightness(var(--dimLink));
 }
 
 a.txtcol-alt:hover
 {
     color: var(--alt);
-    filter: brightness(85%) !important;
+    filter: brightness(var(--dimLink));
 }
 
 a.txtcol-accent:hover
 {
     color: var(--accent);
-    filter: brightness(85%) !important;
+    filter: brightness(var(--dimLink));
 }
 
 a.txtcol-fourth:hover
 {
     color: var(--fourth);
-    filter: brightness(85%) !important;
+    filter: brightness(var(--dimLink));
 }
 
 a.txtcol-neutral:hover
 {
     color: var(--neutral);
-    filter: brightness(85%) !important;
+    filter: brightness(var(--dimLink));
 }
 
 input[type=button].bgcol-main:hover, input[type=submit].bgcol-main:hover, button.bgcol-main:hover
 {
     background-color: var(--main);
-    filter: brightness(95%);
+    filter: brightness(var(--dimBg));
 }
 
 input[type=button].bgcol-alt:hover, input[type=submit].bgcol-alt:hover, button.bgcol-alt:hover
 {
     background-color: var(--alt);
-    filter: brightness(95%);
+    filter: brightness(var(--dimBg));
 }
 
 input[type=button].bgcol-accent:hover, input[type=submit].bgcol-accent:hover, button.bgcol-accent:hover
 {
     background-color: var(--accent);
-    filter: brightness(95%);
+    filter: brightness(var(--dimBg));
 }
 
 input[type=button].bgcol-fourth:hover, input[type=submit].bgcol-fourth:hover, button.bgcol-fourth:hover
 {
     background-color: var(--fourth);
-    filter: brightness(95%);
+    filter: brightness(var(--dimBg));
 }
 
 input[type=button].bgcol-neutral:hover, input[type=submit].bgcol-neutral:hover, button.bgcol-neutral:hover
 {
     background-color: var(--neutral);
-    filter: brightness(95%);
+    filter: brightness(var(--dimBg));
 }

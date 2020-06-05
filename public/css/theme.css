@@ -1,0 +1,126 @@
+/*
+*   Based from https://visme.co/blog/website-color-schemes/
+*   #4 Cool and Fresh
+*/
+
+:root
+{
+    --main: #5cdb95;
+    --alt: #379683;
+    --accent: #05386b;
+    --fourth: #8ee4af;
+    --neutral: #edf5e1;
+}
+
+/**************** Background related ****************/
+.bgcol-main
+{
+    background-color: var(--main);
+}
+
+.bgcol-alt
+{
+    background-color: var(--alt);
+}
+
+.bgcol-accent
+{
+    background-color: var(--accent);
+}
+
+.bgcol-fourth
+{
+    background-color: var(--fourth);
+}
+
+.bgcol-neutral
+{
+    background-color: var(--neutral);
+}
+
+/**************** Text related ****************/
+.txtcol-main
+{
+    color: var(--main);
+}
+
+.txtcol-alt
+{
+    color: var(--alt);
+}
+
+.txtcol-accent
+{
+    color: var(--accent);
+}
+
+.txtcol-fourth
+{
+    color: var(--fourth);
+}
+
+.txtcol-neutral
+{
+    color: var(--neutral);
+}
+
+/**************** Link and button related ****************/
+a.txtcol-main:hover
+{
+    color: var(--main);
+    filter: brightness(85%) !important;
+}
+
+a.txtcol-alt:hover
+{
+    color: var(--alt);
+    filter: brightness(85%) !important;
+}
+
+a.txtcol-accent:hover
+{
+    color: var(--accent);
+    filter: brightness(85%) !important;
+}
+
+a.txtcol-fourth:hover
+{
+    color: var(--fourth);
+    filter: brightness(85%) !important;
+}
+
+a.txtcol-neutral:hover
+{
+    color: var(--neutral);
+    filter: brightness(85%) !important;
+}
+
+input[type=button].bgcol-main:hover, input[type=submit].bgcol-main:hover, button.bgcol-main:hover
+{
+    background-color: var(--main);
+    filter: brightness(95%);
+}
+
+input[type=button].bgcol-alt:hover, input[type=submit].bgcol-alt:hover, button.bgcol-alt:hover
+{
+    background-color: var(--alt);
+    filter: brightness(95%);
+}
+
+input[type=button].bgcol-accent:hover, input[type=submit].bgcol-accent:hover, button.bgcol-accent:hover
+{
+    background-color: var(--accent);
+    filter: brightness(95%);
+}
+
+input[type=button].bgcol-fourth:hover, input[type=submit].bgcol-fourth:hover, button.bgcol-fourth:hover
+{
+    background-color: var(--fourth);
+    filter: brightness(95%);
+}
+
+input[type=button].bgcol-neutral:hover, input[type=submit].bgcol-neutral:hover, button.bgcol-neutral:hover
+{
+    background-color: var(--neutral);
+    filter: brightness(95%);
+}

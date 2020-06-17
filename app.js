@@ -1,21 +1,25 @@
-const express = require('express');
-const hbs = require('express-hbs');
-
 require('dotenv').config();
+const express = require('express');
+const bodyparser = require('body-parser');
+const cors = require('cors');
+const database = require("./models/database");
+
 const app = express();
+try {
+    database.connect();
+} catch(e) {console.log(e);}
 
-app.engine("hbs", hbs().express4({
-    extname: ".hbs",
-    layoutsDir: __dirname + "/views/layouts",
-    defaultLayout: __dirname +"/views/layouts/main.hbs",
-    partialsDir: __dirname + "/views/partials"
-}));
-
-app.set('view engine', 'hbs');
-app.set('views', __dirname + '/views');
-app.use(express.static("public"));
-
+app.use(bodyparser.json());
+app.use(cors());
 
 //Routes
+const indexRoutes = require("./routes/indexRoutes");
+app.use('/api', indexRoutes);
+
 
 //App.listen
+const port = process.env.PORT || 3000;
+
+app.listen(port, ()=>{
+    console.log(`Server started on port ${port}`);
+});
